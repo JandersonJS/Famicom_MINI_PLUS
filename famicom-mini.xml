@@ -1,0 +1,204 @@
+<!--
+theme name:		famicom-mini
+version:		1.0
+author:			ruckage
+-->
+
+<theme>
+    <formatVersion>3</formatVersion>
+
+	<include>./layout.xml</include>
+	
+	<view name="system">
+		<helpsystem name="help">
+			<pos>2 2</pos>
+			<textColor>f11c00</textColor>
+			<iconColor>f11c00</iconColor>
+			<fontPath>./art/TinyUnicode.ttf</fontPath>
+			<fontSize>0.06666666666666</fontSize>
+		</helpsystem>
+	
+		<image name="background" extra="true">
+			<pos>0 0.5</pos>
+			<origin>0 0.5</origin>
+		</image>
+		
+		<image name="system_help" extra="true">
+			<path>./art/system_help.png</path>
+			<pos>0 1</pos>
+			<origin>0 1</origin>
+		</image>
+		
+	</view>
+	
+	<feature supported="carousel">
+
+		<view name="system">
+
+			<carousel name="systemcarousel">
+				<type>horizontal</type>
+				<color>00000000</color>
+				<logoScale>1</logoScale>
+			</carousel>
+
+			<text name="systemInfo">
+				<backgroundColor>00000000</backgroundColor>
+				<fontPath>./art/NESCyrillic_gamelist.ttf</fontPath>
+				<fontSize>0.0592592592592593</fontSize>
+			</text>
+
+		</view>
+
+
+  <view name="menu">
+    <menuText name="menutitle">
+      <fontPath>./art/NESCyrillic_gamelist.ttf</fontPath>
+      <fontSize>0.054</fontSize>
+      <color>f2b83d</color>
+    </menuText>
+    <menuText name="menufooter">
+      <fontPath>./art/NESCyrillic_gamelist.ttf</fontPath>
+      <fontSize>0.03</fontSize>
+      <color>f2b83d</color>
+    </menuText>
+    <menuText name="menutext">
+      <fontPath>./art/NESCyrillic_gamelist.ttf</fontPath>
+      <fontSize>0.038</fontSize>
+      <color>000000</color>
+      <separatorColor>000000</separatorColor>
+      <selectorColor>0072F9</selectorColor>
+      <selectorColorEnd>0072F9</selectorColorEnd>
+      <selectedColor>fefefe</selectedColor>
+      <selectorGradientType>horizontal</selectorGradientType>
+    </menuText>
+    <menuTextSmall name="menutextsmall">
+      <fontPath>./art/NESCyrillic_gamelist.ttf</fontPath>
+      <fontSize>0.03</fontSize>
+      <color>000000</color>
+    </menuTextSmall>
+    <menuGroup name="menugroup">
+      <fontPath>./art/NESCyrillic_gamelist.ttf</fontPath>
+      <fontSize>0.035</fontSize>
+      <color>000000</color>
+      <separatorColor>000000</separatorColor>
+      <backgroundColor>fefefe</backgroundColor>
+      <lineSpacing>2.5</lineSpacing>
+    </menuGroup>
+    <menuBackground name="menubg">
+      <color>ffffff</color>
+      <cornerSize>32 32</cornerSize>
+      <path>./art/menu.png</path>
+    </menuBackground>
+  </view>
+
+	</feature>	
+	
+    <view name="video">
+		
+		<video name="md_video">
+			<showSnapshotNoVideo>true</showSnapshotNoVideo>
+			<showSnapshotDelay>true</showSnapshotDelay>
+			<delay>2</delay>			
+		</video>
+		
+		<image name="md_marquee">
+			<pos>2 2</pos>
+		</image>
+
+	</view>	
+
+    <view name="basic, detailed, video">
+	
+		<image name="background" extra="true">
+			<pos>0 0.5</pos>
+			<origin>0 0.5</origin>
+		</image>
+		
+		<image name="gamelist_help" extra="true">
+			<path>./art/gamelist_help.png</path>
+			<pos>0 1</pos>
+			<origin>0 1</origin>
+		</image>
+	
+		<helpsystem name="help">
+			<pos>2 2</pos>
+			<textColor>f11c00</textColor>
+			<iconColor>f11c00</iconColor>
+			<fontPath>./art/TinyUnicode.ttf</fontPath>
+			<fontSize>0.06666666666666</fontSize>
+		</helpsystem>
+		
+		
+		<text name="md_lbl_rating, md_lbl_releasedate, md_lbl_developer, md_lbl_publisher, md_lbl_genre, md_lbl_players, md_lbl_lastplayed, md_lbl_playcount">
+			<color>393a3b</color>
+			<forceUppercase>1</forceUppercase>
+			<size>0.2 0.2</size>
+			<pos>1 1</pos>
+		</text>
+
+		<text name="md_rating, md_developer, md_publisher, md_genre, md_players, md_playcount, md_releasedate">
+			<forceUppercase>1</forceUppercase>
+			<fontSize>0.0592592592592593</fontSize>
+		</text>
+		
+		<text name="md_players, md_playcount">
+			<fontPath>./art/NESCyrillic_gamelist.ttf</fontPath>
+		</text>
+				
+		
+		<text name="md_developer, md_publisher, md_genre">
+			<fontPath>./art/TinyUnicode.ttf</fontPath>
+			<alignment>center</alignment>
+		</text>
+		
+		
+		<rating name="md_rating">
+			<size>0.0166666666666667 0.0296296296296296</size>
+		</rating>
+		
+		<text name="md_description">
+			<forceUppercase>1</forceUppercase>
+			<fontPath>./art/TinyUnicode.ttf</fontPath>
+			<fontSize>0.0444444444444444</fontSize>
+			<size>0.2447916666666667 0.437037037037037</size>
+			<alignment>left</alignment>
+			<lineSpacing>0.625</lineSpacing>
+		</text>
+		
+		<datetime name="md_lastplayed">
+		<pos>1 1</pos>
+		<size>0.2 0.2</size>
+		</datetime>
+		
+		<datetime name="md_releasedate">
+			<fontPath>./art/TinyUnicode.ttf</fontPath>
+			<size>0.25 0.0333333333333333</size>
+		</datetime>
+		
+		<textlist name="gamelist">
+			<forceUppercase>0</forceUppercase>
+			<scrollSound>./sounds/se_sys_cursor.wav</scrollSound>
+			<fontPath>./art/NESCyrillic_gamelist.ttf</fontPath>
+			<alignment>left</alignment>
+			<fontSize>0.0592592592592593</fontSize>
+		</textlist>
+		
+		<text name="logoText">
+			<pos>2 2</pos>
+		</text>
+		
+
+		 
+		 <sound name="launch">
+			<path>./sounds/se_sys_click_game.wav</path>
+		</sound>
+		 
+	</view>
+
+	<view name="basic">
+	</view>
+
+	<view name="detailed">
+	</view>
+	
+</theme>

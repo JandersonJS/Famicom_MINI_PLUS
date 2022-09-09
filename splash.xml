@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+  <formatVersion>7</formatVersion>
+  <variables>
+    <baseColor>8b0000</baseColor>
+    <gradientEndColor>6b2020</gradientEndColor>
+    <backgroundColor>252525</backgroundColor>
+    <centerFadeColor>8b000050</centerFadeColor>
+  </variables>
+	<view name="splash">
+
+		<splash name="splash">
+			<backgroundColor>000000FF</backgroundColor>
+		</splash>
+		<image name="background">
+			<path>./art/splash.png</path>
+			<size>1 1</size>
+		</image>
+		
+		<text name="label, Famicom_MINI" extra="true">
+			<origin>0 0</origin>
+			<fontPath>./art/NESCyrillic_gamelist.ttf</fontPath>
+			<fontSize>0.023</fontSize>
+			<color>000000</color>
+			<forceUppercase>true</forceUppercase>
+		</text>
+
+    <image name="progressbar">
+      <origin>0 0</origin>
+      <pos>0.25 0.80</pos>
+      <path>./art/progress.png</path>
+      <size>0.5 0.036</size>
+      <color>F9F0E1</color>
+      <colorEnd>F9F0E1</colorEnd>
+      <roundCorners>0.01</roundCorners>
+    </image>
+    <image name="progressbar:active">
+      <tile>true</tile>
+      <path>./art/progress.png</path>
+      <color>A60000</color>
+      <colorEnd>A60000</colorEnd>
+    </image>
+		
+	</view>
+	
+</theme>
