@@ -20,14 +20,14 @@
 		<text name="label, Famicom_MINI" extra="true">
 			<origin>0 0</origin>
 			<fontPath>./art/NESCyrillic_gamelist.ttf</fontPath>
-			<fontSize>0.023</fontSize>
+			<fontSize>0.033</fontSize>
 			<color>000000</color>
 			<forceUppercase>true</forceUppercase>
 		</text>
 
     <image name="progressbar">
       <origin>0 0</origin>
-      <pos>0.25 0.80</pos>
+      <pos>0.25 0.82</pos>
       <path>./art/progress.png</path>
       <size>0.5 0.036</size>
       <color>F9F0E1</color>
