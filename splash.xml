@@ -17,11 +17,12 @@
 			<size>1 1</size>
 		</image>
 		
-		<text name="label, Famicom_MINI" extra="true">
+		<text name="label" extra="true">
 			<origin>0 0</origin>
+      			<pos>0 0.818</pos>
 			<fontPath>./art/NESCyrillic_gamelist.ttf</fontPath>
 			<fontSize>0.033</fontSize>
-			<color>000000</color>
+			<color>ffffff</color>
 			<forceUppercase>true</forceUppercase>
 		</text>
 
