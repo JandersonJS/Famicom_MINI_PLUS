@@ -23,7 +23,7 @@ author:			ruckage
 			<origin>0 0.5</origin>
 		</image>
 		
-		<image name="system_help" extra="true">
+		<image name="system_help" extra="static">
 			<path>./art/system_help.png</path>
 			<pos>0 1</pos>
 			<origin>0 1</origin>
